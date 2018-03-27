@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Linear layout vertical-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:text="Name"
+                android:textColor="#686767" />
+            <!--shows "name"-->
+
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="type your name"
+                android:inputType="textPersonName" />
+            <!--text box to type name-->
+
+        </TableRow>
+        <!--table row-->
+
+    </TableLayout>
+    <!--Table layout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearClicked"
+            android:text="CLEAR" />
+        <!--clear button, when clicked clearClicked method will run-->
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button1"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="printClicked"
+            android:text="PRINT" />
+        <!--print button, when clicked printClicked method will run-->
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contents"
+            android:layout_below="@+id/button1"/>
+        <!--shows names that is typed-->
+
+    </RelativeLayout>
+    <!--relative layout-->
+
+</LinearLayout>
+    <!--linear layout-->
